@@ -22,9 +22,9 @@ spec:
           env:
           - name: DEFAULT_USER
             value: {{ .Values.pgadmin.username }}
-          - name: DEFAULT_PASSWORD
           - name: PGADMIN_PORT
             value: "5050"
+          - name: DEFAULT_PASSWORD
             valueFrom:
               secretKeyRef:
                 name: {{ .Values.pgadmin.password }}
