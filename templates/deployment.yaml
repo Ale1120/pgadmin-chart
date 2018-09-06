@@ -28,7 +28,7 @@ spec:
                 name: {{ .Values.pgadmin.password }}
                 key: pgadmin-password
           ports:
-            - containerPort: {{ .Values.service.internalPort }}
+            - containerPort: 5050
           volumeMounts:
           - name: pgadmin-data
             mountPath: /var/lib/pgadmin4
