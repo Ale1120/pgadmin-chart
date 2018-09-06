@@ -10,10 +10,10 @@ service:
   internalPort: 5050
 pgadmin:
   username: pgadmin4@pgadmin.org
-  #password: admin
+  password: admin
 persistence:
   enabled: true
-  #storageClass:
+  storageClass:
   accessMode: ReadWriteOnce
   size: 4Gi
 resources: {}
