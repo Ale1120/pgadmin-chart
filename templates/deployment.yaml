@@ -25,7 +25,7 @@ spec:
           - name: DEFAULT_PASSWORD
             valueFrom:
               secretKeyRef:
-                name: {{ template "fullname" . }}
+                name: {{ .Values.pgadmin.password }}
                 key: pgadmin-password
           ports:
             - containerPort: {{ .Values.service.internalPort }}
